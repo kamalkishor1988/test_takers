@@ -1,0 +1,10 @@
+<div class="container">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">Test Takers</a>
+    <%= form_tag import_users_path, multipart: true do %>
+      <form class="form-inline">
+        <%= file_field_tag :file, class: 'btn btn-outline-warning' %>
+        <%= submit_tag "Import", class: 'btn btn-outline-success' %>
+      </form>
+    <% end %>
+</div>
